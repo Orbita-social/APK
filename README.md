@@ -1,8 +1,4 @@
-# Orbita GitHub Pages
+Your World. Your People. Your Orbit.
+Orbita is a new kind of social space built for the way people connect, express themselves, and explore online.
 
-1. Replace `YOUR-ORG/YOUR-REPO` in `index.html` with your GitHub organization/repository.
-2. Update the APK filename in the Download button.
-3. Push this folder to your Pages repository.
-4. In GitHub: Settings → Pages → Deploy from branch → `main` → `/ (root)`.
-
-Use GitHub Releases to host APK files rather than committing APK binaries into the repository.
+Create your identity. Meet your people. Build your orbit.
