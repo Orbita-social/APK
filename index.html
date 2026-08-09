@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbita — Download</title>
+  <meta name="description" content="Download the latest Orbita Android app.">
+  <style>
+    :root{
+      --bg:#050617; --panel:#0c0f27; --text:#f7f7ff; --muted:#9da4c7;
+      --blue:#21c8ff; --purple:#9b5cff; --line:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text); background:
+      radial-gradient(circle at 80% 10%,rgba(155,92,255,.25),transparent 30%),
+      radial-gradient(circle at 10% 20%,rgba(33,200,255,.16),transparent 28%),var(--bg);
+      min-height:100vh;
+    }
+    .wrap{max-width:1120px;margin:auto;padding:28px 22px 70px}
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:11px;font-size:21px;font-weight:800;letter-spacing:-.5px}
+    .mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#13d8ff,#684cff 60%,#b34cff);display:grid;place-items:center;box-shadow:0 0 35px rgba(105,76,255,.35)}
+    .mark:before{content:"";width:20px;height:20px;border:5px solid white;border-radius:50%;transform:rotate(-18deg)}
+    .navlink{color:var(--muted);text-decoration:none;font-size:14px}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;padding:85px 0 70px}
+    .eyebrow{display:inline-flex;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);color:#cbd2f6;font-size:12px}
+    h1{font-size:clamp(48px,7vw,82px);line-height:.96;letter-spacing:-5px;margin:22px 0 20px}
+    h1 span{background:linear-gradient(90deg,var(--blue),#fff 42%,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{font-size:18px;line-height:1.7;color:var(--muted);max-width:590px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:13px;text-decoration:none;font-weight:800;font-size:14px}
+    .primary{color:#050617;background:linear-gradient(90deg,var(--blue),#a36bff);box-shadow:0 12px 35px rgba(74,117,255,.25)}
+    .secondary{color:var(--text);border:1px solid var(--line);background:rgba(255,255,255,.04)}
+    .phone{min-height:520px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(160deg,rgba(22,26,65,.95),rgba(7,9,28,.96));box-shadow:0 35px 90px rgba(0,0,0,.45);padding:24px;position:relative;overflow:hidden}
+    .phone:after{content:"";position:absolute;width:280px;height:280px;background:#704cff;filter:blur(90px);opacity:.25;right:-100px;top:-70px}
+    .planet{width:210px;height:210px;border-radius:50%;margin:45px auto 28px;background:linear-gradient(145deg,#1edcff,#7759ff 58%,#271064);position:relative;box-shadow:0 0 80px rgba(80,116,255,.35)}
+    .planet:before{content:"";position:absolute;width:250px;height:65px;border:12px solid #a55cff;border-left-color:#22caff;border-radius:50%;left:-20px;top:76px;transform:rotate(-15deg)}
+    .orbit-card{position:relative;z-index:2;border:1px solid var(--line);background:rgba(255,255,255,.055);border-radius:18px;padding:18px;margin-top:12px}
+    .row{display:flex;justify-content:space-between;align-items:center}
+    .tiny{color:var(--muted);font-size:12px}.big{font-weight:800;font-size:17px}
+    section{padding:30px 0}
+    .section-title{font-size:30px;letter-spacing:-1px;margin:0 0 20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035);padding:22px}
+    .card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+    .version{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .badge{font-size:11px;color:#8ff0ff;background:rgba(33,200,255,.09);border:1px solid rgba(33,200,255,.2);padding:6px 9px;border-radius:999px}
+    footer{border-top:1px solid var(--line);margin-top:45px;padding-top:24px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:55px}.phone{min-height:430px}.grid{grid-template-columns:1fr}h1{letter-spacing:-3px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><div class="mark"></div>orbita</div>
+      <a class="navlink" href="https://github.com/YOUR-ORG/YOUR-REPO/releases">GitHub Releases ↗</a>
+    </nav>
+
+    <main>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">● Android • Latest release</div>
+          <h1>Your world.<br><span>Your people.<br>Your orbit.</span></h1>
+          <p class="sub">Orbita is an AI-powered social world built around your identity, your AI companion, your avatar, and the communities you care about.</p>
+          <div class="actions">
+            <!-- Replace this with your GitHub Release APK URL -->
+            <a class="btn primary" href="https://github.com/YOUR-ORG/YOUR-REPO/releases/latest/download/orbita-0.1.0.apk">Download APK</a>
+            <a class="btn secondary" href="https://github.com/YOUR-ORG/YOUR-REPO/releases">View all versions</a>
+          </div>
+          <p class="tiny" style="margin-top:14px">Android • v0.1.0 • APK • Update the link above for each release</p>
+        </div>
+
+        <div class="phone">
+          <div class="planet"></div>
+          <div class="orbit-card">
+            <div class="row"><span class="tiny">YOUR ORBIT</span><span class="badge">ONLINE</span></div>
+            <div class="big" style="margin-top:8px">AI companion · Communities · Avatars</div>
+          </div>
+          <div class="orbit-card">
+            <div class="row"><span class="tiny">LATEST</span><span class="tiny">v0.1.0</span></div>
+            <div class="big" style="margin-top:8px">Ready to join your orbit?</div>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="section-title">Built for your digital life.</h2>
+        <div class="grid">
+          <div class="card"><h3>✦ AI Companion</h3><p>A personal AI that grows with you and helps make your orbit more interesting.</p></div>
+          <div class="card"><h3>◉ Communities</h3><p>Find small, interest-based spaces where people actually know each other.</p></div>
+          <div class="card"><h3>◌ Avatar & Style</h3><p>Express yourself through avatars, cosmetics, rooms, and your own digital identity.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Release history</h2>
+        <div class="card">
+          <div class="version"><div><div class="big">v0.1.0</div><div class="tiny">Initial Android release</div></div><a class="btn secondary" href="https://github.com/YOUR-ORG/YOUR-REPO/releases/tag/v0.1.0">Release notes</a></div>
+          <!-- Duplicate this block for future versions -->
+        </div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 Orbita</span><span>Your World. Your People. Your Orbit.</span></footer>
+  </div>
+</body>
+</html>
